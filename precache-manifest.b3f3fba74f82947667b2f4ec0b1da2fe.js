@@ -88,12 +88,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/line.567f5738.gif"
   },
   {
-    "revision": "473e2a746d3c151d7dcaa626a7c84c60",
-    "url": "/portfolio/static/media/primeicons.473e2a74.ttf"
-  },
-  {
     "revision": "b8eccb1059ea5faaf6d8b7d457ccfd09",
     "url": "/portfolio/static/media/primeicons.b8eccb10.eot"
+  },
+  {
+    "revision": "473e2a746d3c151d7dcaa626a7c84c60",
+    "url": "/portfolio/static/media/primeicons.473e2a74.ttf"
   },
   {
     "revision": "71bb3d79dcf18b45ae845409e7c2ada3",
