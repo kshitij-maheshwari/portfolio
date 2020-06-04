@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "4bf3e34312c4f1bcde54",
+    "revision": "37a86b25c11c2fa19ee2",
     "url": "/portfolio/static/css/main.a5dab33a.chunk.css"
   },
   {
-    "revision": "4bf3e34312c4f1bcde54",
-    "url": "/portfolio/static/js/main.0f4330a4.chunk.js"
+    "revision": "37a86b25c11c2fa19ee2",
+    "url": "/portfolio/static/js/main.9833b20a.chunk.js"
   },
   {
     "revision": "53ebc025fca807d4dbea",
     "url": "/portfolio/static/js/runtime~main.f308c8e6.js"
   },
   {
-    "revision": "12b7620f847098aa9aa0",
+    "revision": "421396b5c6c91b2143b9",
     "url": "/portfolio/static/css/2.9f80eae1.chunk.css"
   },
   {
-    "revision": "12b7620f847098aa9aa0",
-    "url": "/portfolio/static/js/2.6dcadf9f.chunk.js"
+    "revision": "421396b5c6c91b2143b9",
+    "url": "/portfolio/static/js/2.de8de434.chunk.js"
   },
   {
     "revision": "76b56857ebbae3a5a689f213feb11af0",
@@ -28,24 +28,24 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/open-sans-v15-latin-300.60c86674.woff2"
   },
   {
-    "revision": "521d17bc9f3526c690e8ada6eee55bec",
-    "url": "/portfolio/static/media/open-sans-v15-latin-300.521d17bc.woff"
-  },
-  {
     "revision": "177cc92d2e8027712a8c1724abd272cd",
     "url": "/portfolio/static/media/open-sans-v15-latin-300.177cc92d.ttf"
+  },
+  {
+    "revision": "521d17bc9f3526c690e8ada6eee55bec",
+    "url": "/portfolio/static/media/open-sans-v15-latin-300.521d17bc.woff"
   },
   {
     "revision": "27ef0b062b2e221df16f3bbd97c2dca8",
     "url": "/portfolio/static/media/open-sans-v15-latin-300.27ef0b06.svg"
   },
   {
-    "revision": "9dce7f01715340861bdb57318e2f3fdc",
-    "url": "/portfolio/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
-  },
-  {
     "revision": "cffb686d7d2f4682df8342bd4d276e09",
     "url": "/portfolio/static/media/open-sans-v15-latin-regular.cffb686d.woff2"
+  },
+  {
+    "revision": "9dce7f01715340861bdb57318e2f3fdc",
+    "url": "/portfolio/static/media/open-sans-v15-latin-regular.9dce7f01.eot"
   },
   {
     "revision": "bf2d0783515b7d75c35bde69e01b3135",
@@ -56,6 +56,10 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/open-sans-v15-latin-regular.c045b73d.ttf"
   },
   {
+    "revision": "148a6749baa5f658a45183ddb5ee159f",
+    "url": "/portfolio/static/media/open-sans-v15-latin-700.148a6749.eot"
+  },
+  {
     "revision": "7aab4c13671282c90669eb6a10357e41",
     "url": "/portfolio/static/media/open-sans-v15-latin-regular.7aab4c13.svg"
   },
@@ -64,16 +68,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/open-sans-v15-latin-700.d08c09f2.woff2"
   },
   {
-    "revision": "148a6749baa5f658a45183ddb5ee159f",
-    "url": "/portfolio/static/media/open-sans-v15-latin-700.148a6749.eot"
+    "revision": "7e08cc656863d52bcb5cd34805ac605b",
+    "url": "/portfolio/static/media/open-sans-v15-latin-700.7e08cc65.ttf"
   },
   {
     "revision": "623e3205570002af47fc2b88f9335d19",
     "url": "/portfolio/static/media/open-sans-v15-latin-700.623e3205.woff"
-  },
-  {
-    "revision": "7e08cc656863d52bcb5cd34805ac605b",
-    "url": "/portfolio/static/media/open-sans-v15-latin-700.7e08cc65.ttf"
   },
   {
     "revision": "2e00b2635b51ba336b4b67a5d0bc03c7",
@@ -96,12 +96,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/primeicons.473e2a74.ttf"
   },
   {
-    "revision": "71bb3d79dcf18b45ae845409e7c2ada3",
-    "url": "/portfolio/static/media/primeicons.71bb3d79.woff"
-  },
-  {
     "revision": "38d77552b0353684a208177482d5b6ee",
     "url": "/portfolio/static/media/primeicons.38d77552.svg"
+  },
+  {
+    "revision": "71bb3d79dcf18b45ae845409e7c2ada3",
+    "url": "/portfolio/static/media/primeicons.71bb3d79.woff"
   },
   {
     "revision": "319900e426969ea72375811afc00bbc8",
@@ -112,7 +112,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/twitter.7d4b1fa4.png"
   },
   {
-    "revision": "a45eecc771dd1c0f8cc486625a2bfee4",
+    "revision": "40b2abfc9ab326cf232ae8a3bdfa0958",
     "url": "/portfolio/index.html"
   }
 ];
