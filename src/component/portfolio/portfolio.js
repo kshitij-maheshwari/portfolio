@@ -14,22 +14,24 @@ class Portfolio extends Component {
           variant="dark"
           fixed="top"
         >
-          <Navbar.Brand to="/">Logo</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            Logo
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
 
             <Nav>
-              <Nav.Link as={Link} to="/home" style={{ color: "#ece7e7" }}>
+              <Nav.Link as={Link} to="home" style={{ color: "#ece7e7" }}>
                 Home
               </Nav.Link>
               {/* <Nav.Link as={Link} to="/portfolio" style={{ color: "#ece7e7" }}>
                 Portfolio
               </Nav.Link> */}
-              <Nav.Link as={Link} to="/about" style={{ color: "#ece7e7" }}>
+              <Nav.Link as={Link} to="about" style={{ color: "#ece7e7" }}>
                 Skills
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact" style={{ color: "#ece7e7" }}>
+              <Nav.Link as={Link} to="contact" style={{ color: "#ece7e7" }}>
                 Contact
               </Nav.Link>
             </Nav>

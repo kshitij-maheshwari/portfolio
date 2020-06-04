@@ -27,7 +27,9 @@ class Contact extends Component {
           variant="dark"
           fixed="top"
         >
-          <Navbar.Brand to="/">Logo</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/">
+            Logo
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
