@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { Chart } from "primereact/chart";
+import { Link } from "react-router-dom";
 
 class About extends Component {
   render() {
@@ -80,33 +81,24 @@ class About extends Component {
           variant="dark"
           fixed="top"
         >
-          <Navbar.Brand href="http://localhost:3000">Logo</Navbar.Brand>
+          <Navbar.Brand to="/">Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
             <Nav>
-              <Nav.Link
-                href="http://localhost:3000/home"
-                style={{ color: "#ece7e7" }}
-              >
+              <Nav.Link as={Link} to="/home" style={{ color: "#ece7e7" }}>
                 Home
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 href="http://localhost:3000/portfolio"
                 style={{ color: "#ece7e7" }}
               >
                 Portfolio
-              </Nav.Link>
-              <Nav.Link
-                href="http://localhost:3000/about"
-                style={{ color: "#ece7e7" }}
-              >
+              </Nav.Link> */}
+              <Nav.Link as={Link} to="/about" style={{ color: "#ece7e7" }}>
                 Skills
               </Nav.Link>
-              <Nav.Link
-                href="http://localhost:3000/contact"
-                style={{ color: "#ece7e7" }}
-              >
+              <Nav.Link as={Link} to="/contact" style={{ color: "#ece7e7" }}>
                 Contact
               </Nav.Link>
             </Nav>
