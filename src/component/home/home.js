@@ -39,11 +39,12 @@ class Home extends Component {
               Kshitij Maheshwari
             </a>
           </h2>
+          <div className="typewriter">
+            <h2>
+              <span>A Full Stack Web Developer...</span>
+            </h2>
+          </div>
 
-          <h2>
-            A Full Stack Web Developer...
-            <span className="blinking-cursor">|</span>
-          </h2>
           <br />
           <h2>
             <Button
