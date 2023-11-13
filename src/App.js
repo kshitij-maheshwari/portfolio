@@ -31,10 +31,7 @@ class App extends Component {
     return (
       <React.Fragment>
         {!this.state.loadPage ? (
-          <div
-            id="loader"
-            style={{ backgroundColor: "black", height: "100vh" }}
-          >
+          <div id="loader" style={{ backgroundColor: "black", height: "100vh" }}>
             <ProgressSpinner
               style={{
                 position: " absolute",

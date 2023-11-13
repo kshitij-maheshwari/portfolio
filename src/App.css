@@ -12,6 +12,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   font-family: monospace;
+  padding: 1em;
 }
 
 .App-link {
@@ -31,10 +32,10 @@
   font-weight: bold;
 }
 .imagecover {
-  width: 160px;
+  width: 170px;
   height: 200px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: unset;
   object-position: center right;
 }
 .companylink {
@@ -60,35 +61,76 @@
     opacity: 1;
   }
 }
-
-.typewriter h2 {
-  color: #fff;
-  font-family: monospace;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 4s steps(30, end), blink-caret 1s step-end infinite;
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 30px;
+  color: white;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
+@keyframes blink {
   from,
   to {
-    border-color: transparent;
+    color: transparent;
   }
   50% {
-    border-color: orange;
+    color: white;
+  }
+}
+@-moz-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-webkit-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-ms-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+@-o-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+.moveLogoDesktop {
+  animation: diagonal 2s forwards;
+}
+@keyframes diagonal {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(calc(4vw - 50vw), calc(25vh - 50vh)) scale(0.6);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .chartDiv canvas {
+    position: absolute;
+    top: 3vh;
   }
 }

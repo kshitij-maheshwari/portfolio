@@ -7,24 +7,16 @@ class Profile extends Component {
       <div className="App">
         <TopNavbar />
         <header className="App-header">
-          <img
-            src={require("../../images/picture.JPG")}
-            className="imagecover"
-            alt="profilepicture"
-          />
+          <img src={require("../../images/picture.JPG")} className="imagecover" alt="profilepicture" />
           <br />
           <p style={{ fontFamily: "monospace" }}>
-            I work for{" "}
-            <a
-              className="companylink"
-              href="https://www.infosys.com/"
-              target={"_blank"}
-            >
-              Infosys Limited
-            </a>{" "}
-            and am currently posted in Jaipur, Rajasthan.
-            <br />I am a Passionate Web Developer who always look forward to
-            learn and implement new technologies and explore opportunities.
+            I am presently working in{" "}
+            <a className="companylink" href="https://www.jio.com/" target={"_blank"}>
+              Reliance Jio
+            </a>
+            {", "}
+            Mumbai(Maharashtra) as Assistant Manager.
+            <br />I am a Passionate Web Developer who always look forward to learn and implement new technologies and explore opportunities.
           </p>
         </header>
       </div>

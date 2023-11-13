@@ -6,14 +6,23 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 
 class Home extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       pro: false,
+      moveLogo: false,
     };
+    this.isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
   }
   profile = () => {
-    this.setState({ pro: true });
+    if (this.isMobile) {
+      this.setState({ pro: true });
+    } else {
+      this.setState({ moveLogo: true });
+      setTimeout(() => {
+        this.setState({ pro: true });
+      }, 2000);
+    }
   };
   render() {
     if (this.state.pro === true) {
@@ -21,30 +30,25 @@ class Home extends Component {
     }
     return (
       <div className="App">
-        <header className="App-header">
+        <div className="App-header">
           <img
             src={require("../../images/logo.png")}
             style={{ height: "14vh" }}
             alt="logo"
+            className={this.state.moveLogo && !this.isMobile ? "moveLogoDesktop" : ""}
           />
           <br />
 
           <h2>Hello, Warm Greetings from</h2>
           <h2>
-            <a
-              href="http://www.linkedin.com/in/kshitijmaheshwari"
-              className="linkedinlink"
-              target={"_blank"}
-            >
-              Kshitij Maheshwari
+            <a href="https://www.linkedin.com/in/kshitijmaheshwari" className="linkedinlink" target={"_blank"} title="LinkedIn Page">
+              &lt;Kshitij Maheshwari /&gt;
             </a>
           </h2>
-          <div className="typewriter">
-            <h2>
-              <span>A Full Stack Web Developer...</span>
-            </h2>
-          </div>
-
+          <h2>
+            A Full Stack Web Developer...
+            <span className="blinking-cursor">|</span>
+          </h2>
           <br />
           <h2>
             <Button
@@ -55,7 +59,8 @@ class Home extends Component {
               iconPos="right"
             />
           </h2>
-        </header>
+          {/* <h6>Visitor Count : {this.props.visitorCount}</h6> */}
+        </div>
       </div>
     );
   }
